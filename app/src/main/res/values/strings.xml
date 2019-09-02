@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RandomColor</string>
+    <string name="button_name">change!!!</string>
+    <string name="red_value">RED : ?</string>
+    <string name="green_value">GREEN : ?</string>
+    <string name="blue_value">BLUE : ?</string>
 </resources>
