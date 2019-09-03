@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView red;
     private TextView green;
     private TextView blue;
+    private Button changeBtn;
     View colorBlock;
 
     @Override
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         green = findViewById(R.id.txvG);
         blue = findViewById(R.id.txvB);
         colorBlock = findViewById(R.id.colorBlock);
+        changeBtn = findViewById(R.id.changeBtn);
     }
 
     public void colorChange(View v) {
@@ -45,5 +48,6 @@ public class MainActivity extends AppCompatActivity {
         blue.setTextColor(Color.rgb(0, 0, blueValue));
 
         colorBlock.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+        changeBtn.setTextColor(Color.rgb(redValue, greenValue, blueValue));
     }
 }
